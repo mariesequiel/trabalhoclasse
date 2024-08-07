@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada de Letra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <p>Digite uma letra:</p>
+        <input type="text" class="input-box" id="inputBox" maxlength="1">
+        <button class="button" onclick="showOutput()">Apresentar</button>
+        <div class="output-box" id="outputBox"></div>
+    </div>
+
+    <script>
+        function showOutput() {
+            var inputBox = document.getElementById('inputBox');
+            var outputBox = document.getElementById('outputBox');
+            outputBox.textContent = inputBox.value;
+        }
+    </script>
+</body>
+</html>
